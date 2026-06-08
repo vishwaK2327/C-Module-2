@@ -16,8 +16,35 @@ If i is odd, print its value.
 Increment i to skip the next even number (can also increment by 2 for simplicity).
 
 ## Program
-Add code here
+```
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    printf("Odd numbers from 1 to %d are:\n", n);
+    for (i = 1; i <= n; i += 2) {
+        printf("%d ", i);
+    }
+    printf("\n");
+    return 0;
+}
+```
+
 
 ## Output
+```
+Input:
+Enter the value of n: 10
+Output:
+Odd numbers from 1 to 10 are:
+1 3 5 7 9
+```
+
+
+
+
 
 ## Result
+The above programme is implented and executed.
