@@ -21,8 +21,49 @@ Print @ symbols for (n - i) positions, where n is the total number of rows.
 Print numbers in descending order from i to 1.
 
 ## Program
-Add Code Here
+```
+#include <stdio.h>
+int main() {
+    int i, j, n;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+
+ for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d", j);
+        }
+        for (j = 1; j <= n - i; j++) {
+            printf("@");
+        }
+        if (i != n) {
+            for (j = 1; j <= n - i - 1; j++) {
+                printf("@");
+            }
+        }
+        for (j = i; j >= 1; j--) {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
+
 
 ## Output
+```
+Input:
+Enter the number of rows: 5
+Output:
+1@@@@1
+12@@@21
+123@@321
+1234@4321
+1234554321
+```
+
+
+
 
 ## Result
+The above programme is implemented and executed.
